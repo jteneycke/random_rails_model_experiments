@@ -16,6 +16,18 @@ def make_clients
   end
 end
 
+
+def make_goals
+  30.times do
+    g = Goal.create(
+      name: Faker::Company.catch_phrase,
+      description: Faker::Lorem.paragraph(4)
+    )
+    g.parent = Goal.all.sample
+    g.save
+  end
+end
+
 def most_clients(amount)
   return if amount.class != Fixnum
   Client.all

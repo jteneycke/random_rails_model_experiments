@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  parent_id: 1
+  name: MyString
+  description: MyText
+  due: 2014-10-09 12:45:38
+
+two:
+  parent_id: 1
+  name: MyString
+  description: MyText
+  due: 2014-10-09 12:45:38
